@@ -1,0 +1,137 @@
+body{
+	padding:0;
+	margin:0;
+	background:url(images/menu_bg.jpg) 0 178px repeat-x #040404;
+	color:#D3D3D3;
+	overflow-y:scroll;
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #999999;
+}
+div, h1, h2, p, form, label, input, textarea, img{
+	margin:0; padding:0;
+}
+img{
+	border: 0;
+}
+a {
+	color: #999999;
+	text-decoration: none;
+}
+a:hover {
+	color: #FFFFFF;
+}
+/*------------------------------------------------body--------------------*/
+
+/*------------------------------------------------header start--------------------*/
+div.Header {
+	position:relative;
+	margin:0 auto;
+	width:800px;
+	height:178px;
+}
+
+div.Menu {
+	position:relative;
+	margin:0 auto;
+	width:800px;
+	height:97px;
+	background:url(images/menu_bg.jpg) 0 0 repeat-x;
+}
+
+div.pidesign-03_ {
+	position:relative;
+	float:left;
+	width:105px;
+	height:97px;
+}
+
+div.home_ {
+	position:relative;
+	float:left;
+	width:167px;
+	height:97px;
+	background:url(images/pidesign_09.jpg) 0% 100% no-repeat;
+}
+
+div.clienti_ {
+	position:relative;
+	float:left;
+	width:136px;
+	height:97px;
+	background:url(images/pidesign_09.jpg) 36% 100% no-repeat;
+}
+
+div.portofoliu_ {
+	position:relative;
+	float:left;
+	width:134px;
+	height:97px;
+	background:url(images/pidesign_09.jpg) 64.9% 100% no-repeat;
+}
+
+div.contact_ {
+	position:relative;
+	float:left;
+	width:164px;
+	height:97px;
+	background:url(images/pidesign_09.jpg) 100% 100% no-repeat;
+}
+
+div.pidesign-09_ {
+	position:relative;
+	float:left;
+	width:94px;
+	height:96px;
+}
+/*------------------------------------------------header stop--------------------*/
+
+/*------------------------------------------------content start--------------------*/
+div.Continut {
+	position:relative;
+	margin:0 auto;
+	width:800px;
+	min-height: 400px;
+	padding: 20px;
+}
+/*------------------------------------------------content stop--------------------*/
+
+/*------------------------------------------------footer start--------------------*/
+
+div.Footer {
+	position:relative;
+	margin:0 auto;
+	padding-top: 10px;
+	width:100%;
+	height:39px;
+	background:url(images/punct.jpg) top repeat-x;
+	color: #404040;
+}
+
+h2 {
+	font-family: Tahoma;
+	margin: 0 0 10px 0;
+	letter-spacing:-1px;
+	font-size:16px;
+}
+pre {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	overflow-x: auto;
+}
+div#page {
+	width: 800px;
+	margin: 0 auto;
+	text-align: left;
+	padding: 20px;
+}
+div#container {
+	
+}
+div#footer {
+	clear: both;
+	color: #777;
+	margin: 0 auto;
+	padding: 20px 0 40px;
+	text-align: center;
+}

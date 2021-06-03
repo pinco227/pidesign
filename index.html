@@ -1,0 +1,298 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        Pi-Design.Ro - Portofoliu Web Design
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portofoliu.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+    <script type="text/javascript" src="js/jquery.galleriffic.js"></script>
+    <script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
+    <style>
+        .noscript {
+            display: none;
+        }
+    </style>
+
+    <!-- ImageReady Preload Script (Untitled-1.psd) -->
+    <script type="text/javascript">
+        userAgent = window.navigator.userAgent;
+        browserVers = parseInt(userAgent.charAt(userAgent.indexOf("/") + 1), 10);
+        function newImage(arg) {
+            if (document.images) {
+                rslt = new Image();
+                rslt.src = arg;
+                return rslt;
+            }
+        }
+
+        function findElement(n, ly) {
+            if (browserVers < 4) return document[n];
+            var curDoc = ly ? ly.document : document;
+            var elem = curDoc[n];
+            if (!elem) {
+                for (var i = 0; i < curDoc.layers.length; i++) {
+                    elem = findElement(n, curDoc.layers[i]);
+                    if (elem) return elem;
+                }
+            }
+            return elem;
+        }
+
+        function changeImages() {
+            if (document.images && (preloadFlag == true)) {
+                var img;
+                for (var i = 0; i < changeImages.arguments.length; i += 2) {
+                    img = null;
+                    if (document.layers) {
+                        img = findElement(changeImages.arguments[i], 0);
+                    }
+                    else {
+                        img = document.images[changeImages.arguments[i]];
+                    }
+                    if (img) {
+                        img.src = changeImages.arguments[i + 1];
+                    }
+                }
+            }
+        }
+
+        var preloadFlag = false;
+        function preloadImages() {
+            if (document.images) {
+                home_over = newImage("images/home-over.jpg");
+                clienti_over = newImage("images/clienti-over.jpg");
+                portofoliu_over = newImage("images/portofoliu-over.jpg");
+                contact_over = newImage("images/contact-over.jpg");
+                preloadFlag = true;
+            }
+        }
+    </script>
+    <!-- End Preload Script -->
+</head>
+
+<body onload="preloadImages();">
+    <!-- ImageReady Slices (Untitled-1.psd) -->
+
+    <div class="Header">
+        <a href="#">
+            <img src="images/logo-pidesign.jpg" width="800" height="178" border="0"
+                alt="Pi-Design.Ro - servicii web design" /></a>
+    </div>
+    <div class="Menu">
+        <div class="pidesign-03_">
+            <img id="pidesign_03" src="images/pidesign_03.jpg" width="105" height="97" alt="" />
+        </div>
+        <div class="home_">
+            <a href="#" onmouseover="changeImages('home', 'images/home-over.jpg'); return true;"
+                onmouseout="changeImages('home', 'images/home.jpg'); return true;"
+                onmousedown="changeImages('home', 'images/home-over.jpg'); return true;"
+                onmouseup="changeImages('home', 'images/home-over.jpg'); return true;">
+                <img name="home" id="home" src="images/home.jpg" width="167" height="64" border="0"
+                    alt="Pi-Design.Ro - Prima pagina" /><br />
+                <div style="position:relative; top:4px; left:85px; width:60px;">Home</div>
+            </a>
+        </div>
+        <div class="clienti_">
+            <a href="#" onmouseover="changeImages('clienti', 'images/clienti-over.jpg'); return true;"
+                onmouseout="changeImages('clienti', 'images/clienti.jpg'); return true;"
+                onmousedown="changeImages('clienti', 'images/clienti-over.jpg'); return true;"
+                onmouseup="changeImages('clienti', 'images/clienti-over.jpg'); return true;">
+                <img name="clienti" id="clienti" src="images/clienti.jpg" width="136" height="64" border="0"
+                    alt="Pi-Design.Ro - Clientii nostri" /><br />
+                <div style="position:relative; top:4px; left:2px;" align="center">Clienti</div>
+            </a>
+        </div>
+        <div class="portofoliu_">
+            <a href="#" onmouseover="changeImages('portofoliu', 'images/portofoliu-over.jpg'); return true;"
+                onmouseout="changeImages('portofoliu', 'images/portofoliu.jpg'); return true;"
+                onmousedown="changeImages('portofoliu', 'images/portofoliu-over.jpg'); return true;"
+                onmouseup="changeImages('portofoliu', 'images/portofoliu-over.jpg'); return true;">
+                <img name="portofoliu" id="portofoliu" src="images/portofoliu.jpg" width="134" height="64" border="0"
+                    alt="Pi-Design.Ro - Portofoliu" /><br />
+                <div style="position:relative; top:4px; left:2px;" align="center">Portofoliu</div>
+            </a>
+        </div>
+        <div class="contact_">
+            <a href="#" onmouseover="changeImages('contact', 'images/contact-over.jpg'); return true;"
+                onmouseout="changeImages('contact', 'images/contact.jpg'); return true;"
+                onmousedown="changeImages('contact', 'images/contact-over.jpg'); return true;"
+                onmouseup="changeImages('contact', 'images/contact-over.jpg'); return true;">
+                <img name="contact" id="contact" src="images/contact.jpg" width="164" height="64" border="0"
+                    alt="Pi-Design.Ro - Contact" /><br />
+                <div style="position:relative; top:4px; left:48px;">Contact</div>
+            </a>
+        </div>
+        <div class="pidesign-09_">
+            <img src="images/pidesign_03.jpg" width="94" height="97" alt="" />
+        </div>
+    </div>
+    <div id="page">
+        <div id="container">
+            <h2 style="color:#d97422">&loz; Portofoliu webdesign</h2>
+
+            <!-- Start Advanced Gallery Html Containers -->
+            <div id="gallery" class="content">
+                <div class="slideshow-container">
+                    <div id="slideshow" class="slideshow"></div>
+                    <div id="loading" class="loader"></div>
+                    <div id="caption" class="caption-container"></div>
+                </div>
+            </div>
+            <div id="thumbs" class="navigation">
+                <ul class="thumbs noscript">
+                    <li>
+                        <a class="thumb" name="Alegria" href="portofoliu/alegria.jpg"
+                            title="Alegria - Organizatori evenimente">
+                            <img src="portofoliu/alegria-s.jpg" alt="Alegria - Organizatori evenimente" />
+                        </a>
+                        <div class="caption">
+                            <div class="image-title">Alegria - Organizatori evenimente</div>
+                            <div class="image-desc">site de prezentare - HTML/CSS/Photoshop</div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="thumb" name="Lorman" href="portofoliu/lorman.jpg" title="Lorman - Haine din piele">
+                            <img src="portofoliu/lorman-s.jpg" alt="Lorman - Haine din piele" />
+                        </a>
+                        <div class="caption">
+                            <div class="image-title">Lorman - Haine din piele</div>
+                            <div class="image-desc">magazin online - HTML/CSS/PHP/MySQL/Photoshop</div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="thumb" name="Renatte" href="portofoliu/renatte.jpg" title="Renatte - Fier forjat">
+                            <img src="portofoliu/renatte-s.jpg" alt="Renatte - Fier forjat" />
+                        </a>
+                        <div class="caption">
+                            <div class="image-title">Renatte - Fier forjat</div>
+                            <div class="image-desc">site de prezentare - HTML/CSS/PHP/MySQL/Photoshop</div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="thumb" name="Skai" href="portofoliu/skai.jpg" title="Skai - Anunturi online">
+                            <img src="portofoliu/skai-s.jpg" alt="Skai - Anunturi online" />
+                        </a>
+                        <div class="caption">
+                            <div class="image-title">Skai</div>
+                            <div class="image-desc">Anunturi online - HTML/JavaScript/CSS/PHP/MySQL/Photoshop</div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="thumb" name="Mariaj" href="portofoliu/mariaj.jpg"
+                            title="Site organizatori evenimente cu produse personalizabile">
+                            <img src="portofoliu/mariaj-s.jpg"
+                                alt="Site organizatori evenimente cu produse personalizabile" />
+                        </a>
+                        <div class="caption">
+                            <div class="image-title">Organizatori evenimente</div>
+                            <div class="image-desc">Comenzi produse personalizate - HTML/CSS/PHP/MySQL/Photoshop</div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="thumb" name="Vise din piele" href="portofoliu/vise.jpg"
+                            title="Vise din piele - Magazin online">
+                            <img src="portofoliu/vise-s.jpg" alt="Vise din piele - Magazin online" />
+                        </a>
+                        <div class="caption">
+                            <div class="image-title">Vise din piele</div>
+                            <div class="image-desc">Magazin online - xHTML/JavaScript/CSS/PHP/MySQL/Photoshop</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            // We only want these styles applied when javascript is enabled
+            $('div.navigation').css({ 'width': '320px', 'float': 'left' });
+            $('div.content').css('display', 'block');
+
+            // Initially set opacity on thumbs and add
+            // additional styling for hover effect on thumbs
+            var onMouseOutOpacity = 0.5;
+            $('#thumbs ul.thumbs li').opacityrollover({
+                mouseOutOpacity: onMouseOutOpacity,
+                mouseOverOpacity: 1.0,
+                fadeSpeed: 'fast',
+                exemptionSelector: '.selected'
+            });
+            var captionOpacity = 0.8;
+            // Initialize Advanced Galleriffic Gallery
+            var gallery = $('#thumbs').galleriffic({
+                delay: 2500,
+                numThumbs: 6,
+                preloadAhead: 6,
+                enableTopPager: false,
+                enableBottomPager: true,
+                maxPagesToShow: 7,
+                imageContainerSel: '#slideshow',
+                controlsContainerSel: '#controls',
+                captionContainerSel: '#caption',
+                loadingContainerSel: '#loading',
+                renderSSControls: false,
+                renderNavControls: false,
+                playLinkText: 'Play Slideshow',
+                pauseLinkText: 'Pause Slideshow',
+                prevLinkText: '&lsaquo; Previous Photo',
+                nextLinkText: 'Next Photo &rsaquo;',
+                nextPageLinkText: 'Next &rsaquo;',
+                prevPageLinkText: '&lsaquo; Prev',
+                enableHistory: false,
+                autoStart: true,
+                syncTransitions: true,
+                defaultTransitionDuration: 900,
+                onSlideChange: function (prevIndex, nextIndex) {
+                    // 'this' refers to the gallery, which is an extension of $('#thumbs')
+                    this.find('ul.thumbs').children()
+                        .eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+                        .eq(nextIndex).fadeTo('fast', 1.0);
+                },
+                onTransitionOut: function (slide, caption, isSync, callback) {
+                    slide.fadeTo(this.getDefaultTransitionDuration(isSync), 0.0, callback);
+                    caption.fadeTo(this.getDefaultTransitionDuration(isSync), 0.0);
+                },
+                onTransitionIn: function (slide, caption, isSync) {
+                    var duration = this.getDefaultTransitionDuration(isSync);
+                    slide.fadeTo(duration, 1.0);
+
+                    // Position the caption at the bottom of the image and set its opacity
+                    var slideImage = slide.find('img');
+                    caption.width(slideImage.width())
+                        .css({
+                            'bottom': Math.floor((slide.height() - slideImage.outerHeight()) / 2),
+                            'left': Math.floor((slide.width() - slideImage.width()) / 2) + slideImage.outerWidth() - slideImage.width()
+                        })
+                        .fadeTo(duration, captionOpacity);
+                },
+                onPageTransitionOut: function (callback) {
+                    this.fadeTo('fast', 0.0, callback);
+                },
+                onPageTransitionIn: function () {
+                    this.fadeTo('fast', 1.0);
+                }
+            });
+        });
+    </script>
+    <div class="Footer">
+        <div style="position:relative; width:800px; margin: 0 auto;">
+            <div style="position:relative; float:left; width:400px;">
+                &loz; <a href="#">Home</a> &loz; <a href="#">Clienti</a> &loz; <a href="#">Portofoliu</a> &loz; <a
+                    href="#">Contact</a> &loz;
+            </div>
+            <div style="position:relative; float:left; width:400px;" align="right">2010 &copy; Copyright Pi-Design.Ro.
+                Toate
+                drepturile sunt rezervate.</div>
+        </div>
+    </div>
+
+    <!-- End ImageReady Slices -->
+</body>
+
+</html>
